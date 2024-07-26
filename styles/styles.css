@@ -1,0 +1,86 @@
+/* things which can be used all over the page */
+*{
+  font-family:sans-serif;
+}
+.display-flex{
+  display:flex;
+}
+.text-white{
+  color:white;
+}
+/* header section */
+.header-section{
+  background-color:rgb(36, 35, 35);
+  color:rgba(255, 255, 255, 0.849);
+  height:715px;
+  width: 1440px;
+}
+.first-header-div{
+  margin-left:30px;
+  justify-content:space-between;
+}
+#workout-video-btn{
+  background-color:transparent;
+}
+#video-tutorial-btn{
+  background-color:transparent;
+}
+#join-club-btn{
+  background-color:rgb(230,83,60);
+  color:white;
+  font-size:1rem;
+  padding:10px 25px;
+  border-radius:29px;
+  margin-top: 10px;
+  border-color:rgb(230,83,60);
+  margin-left:25px;
+  cursor:pointer
+}
+#download-btn{
+  background-color:transparent;
+  font-size:1rem;
+  color:white;
+  padding:10px 25px;
+  border-radius:29px;
+  text-decoration: none;
+  margin-left:15px;
+  margin-top: 10px;
+  border-color: white;
+  align-items:center;
+  cursor:pointer;
+}
+.health-tip-para{
+  font-size:.8rem;
+  margin-top:5px;
+  align-items: center;
+  text-align:center;
+  color:rgb(36, 35, 35);
+}
+.shape{
+  font-family:'Courier New','Courier New', Courier, monospace;
+}
+.health-tip-body-shape{
+  font-size:5.5rem;
+  text-align:center;
+}
+.navigation{
+justify-content:space-between;
+align-items:center;
+}
+.fitness-tag{
+  color:rgb(230,83,60);
+  font-size:2.5rem;
+  margin-left:50px;
+}
+.nav-link{
+  text-decoration:none;
+}
+.nav-item{
+  list-style:none;
+  margin-right:30px;
+  padding:8px 20px;
+  border-radius:29px;
+}
+#home-btn{
+  background-color:rgb(230,83,60);
+}
