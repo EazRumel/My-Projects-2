@@ -1,4 +1,10 @@
 /* things which can be used all over the page */
+.sevillana-regular {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 *{
   font-family:sans-serif;
 }
@@ -12,18 +18,58 @@
 .header-section{
   background-color:rgb(36, 35, 35);
   color:rgba(255, 255, 255, 0.849);
-  height:715px;
+  height:755px;
   width: 1440px;
 }
 .first-header-div{
   margin-left:30px;
   justify-content:space-between;
 }
-#workout-video-btn{
-  background-color:transparent;
-}
 #video-tutorial-btn{
-  background-color:transparent;
+  position:absolute;
+  left:1074px;
+  top:556px;
+  box-sizing:border-box;
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:6px solid;
+  backdrop-filter:blur(20px);
+  background:rgba(48,48,48,0.54);
+  padding:2px 15px;
+}
+#three-fifty{
+  color:white;
+  font-size:20px;
+  font-weight: 900px;
+  line-height: 24px;
+  text-align: left;
+}
+#video-tutorial{
+  color:white;
+  font-weight: 400px;
+  font-size:10px;
+}
+#workout-video-btn{
+  position: absolute;
+  left:1290px;
+  top:290px;
+  box-sizing: border-box;
+  border:1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(20px);
+  border-radius:6px solid;
+  backdrop-filter:blur(20px);
+  background:rgba(48,48,48,0.54);
+  padding:5px 10px;
+}
+#five-hundred{
+  color:white;
+  font-size:32px;
+  font-weight: 900px;
+  text-align: left;
+}
+#workout-videos{
+  color:white;
+  font-weight: 400px;
+  font-size:10px;
 }
 #join-club-btn{
   background-color:rgb(230,83,60);
@@ -34,10 +80,10 @@
   margin-top: 10px;
   border-color:rgb(230,83,60);
   margin-left:25px;
-  cursor:pointer
+  cursor:pointer;
+  flex-direction: row;
 }
-#download-btn{
-  background-color:transparent;
+#download-btn{               
   font-size:1rem;
   color:white;
   padding:10px 25px;
@@ -45,19 +91,21 @@
   text-decoration: none;
   margin-left:15px;
   margin-top: 10px;
-  border-color: white;
+  border:1px solid rgb(255,255,255);
+  background:transparent;
   align-items:center;
   cursor:pointer;
+  flex-direction: row;
 }
 .health-tip-para{
   font-size:.8rem;
   margin-top:5px;
   align-items: center;
   text-align:center;
-  color:rgb(36, 35, 35);
+  color:grey;
 }
 .shape{
-  font-family:'Courier New','Courier New', Courier, monospace;
+  font-family: "Sevillana", cursive; ;
 }
 .health-tip-body-shape{
   font-size:5.5rem;
@@ -84,3 +132,35 @@ align-items:center;
 #home-btn{
   background-color:rgb(230,83,60);
 }
+/* responsive layout create section */
+/* header section responsive */
+ @media screen and (max-width:576px){
+  .navigation,.nav-link,.health-tip-body-shape,.health-tip-para,.first-header-div,.fitness-tag{
+    flex-direction:column;
+    justify-content:left;
+    align-items: left;
+    text-align: left;
+  }
+  .header-section{
+    width:520px;
+    height:1604px;
+  }
+  #video-tutorial-btn{
+    left:30px;
+    top:1300px;
+    background:rgba(48,48,48,0.54);
+    border-radius: 5px;
+  }
+  #workout-video-btn{
+    left:280px;
+    top:1180px;
+    background:rgba(48,48,48,0.54);
+    border-radius:5px;
+  }
+  .nav-item{
+    background-image:url(../images/hamicon.png);
+    background-repeat: no-repeat;
+    color:transparent;
+    border:1px solid rgb(255,255,255);
+  }
+ }
