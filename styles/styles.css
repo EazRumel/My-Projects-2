@@ -26,7 +26,7 @@
   justify-content:space-between;
 }
 #video-tutorial-btn{
-  position:absolute;
+  position: absolute;
   left:1074px;
   top:556px;
   box-sizing:border-box;
@@ -38,18 +38,19 @@
 }
 #three-fifty{
   color:white;
-  font-size:2rem;
+  font-size:1rem;
   font-weight: 900px;
   line-height: 24px;
   text-align: left;
+  border-radius: 12px;
 }
 #video-tutorial{
   color:white;
   font-weight:400px;
-  font-size:1rem;
+  font-size:.8rem;
 }
 #workout-video-btn{
-  position: absolute;
+  position:absolute;
   left:1290px;
   top:290px;
   box-sizing: border-box;
@@ -62,14 +63,14 @@
 }
 #five-hundred{
   color:white;
-  font-size:3.2rem;
+  font-size:2.2rem;
   font-weight:900px;
   text-align: left;
 }
 #workout-videos{
   color:white;
   font-weight: 400px;
-  font-size:1rem;
+  font-size:.8rem;
 }
 #join-club-btn{
   background-color:rgb(230,83,60);
@@ -199,5 +200,13 @@ align-items:center;
     color:transparent;
     border:1px solid rgb(255,255,255);
     padding:5px 10px;
+  }
+  /* main section */
+  .main-section{
+    height: 100%;
+    width: 100%;
+  }
+  .image-containers{
+    flex-direction: column;
   }
  }
