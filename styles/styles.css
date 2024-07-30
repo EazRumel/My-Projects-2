@@ -4,7 +4,6 @@
   font-weight: 400;
   font-style: normal;
 }
-
 *{
   font-family:sans-serif;
 }
@@ -234,6 +233,53 @@ align-items:center;
 .bmi-main-div{
   margin-top:200px;
   background:rgb(36, 35, 35);
+}
+/* team and trainer part */
+.team-header{
+  color:white;
+  margin-top:50px;
+  font-size:2rem;
+  font-weight:700px;
+}
+.team-para{
+  color:gray;
+}
+.text-part-div{
+  text-align: center;
+  justify-content:center;
+  align-items: center;
+  margin-top:70px;
+}
+.trainer-names{
+  color:white;
+}
+.trainer-roles{
+  color:gray;
+}
+.team-container-two{
+  display:grid;
+  grid-template-columns: repeat(3,2fr);
+  align-items:center;
+  justify-content:center;
+  margin-left:150px;
+  margin-right:370px;
+  border-radius: 20px;
+  background:rgb(36, 35, 35);
+}
+.trainer-img{
+  height:250px;
+  width:250px;
+  border-radius:30px;
+  align-items:center;
+  margin-top:20px;
+  margin-left:20px;
+}
+.trainer-names,.trainer-roles{
+  margin-left:20px;
+}
+.team-main-div{
+  border-radius:30px;
+  margin-top:100px;
 }
 /* responsive layout create section */
 /* header section responsive */
