@@ -176,9 +176,8 @@ align-items:center;
   align-self:stretch;
   position:static;
   margin:62px 40px;
-  
 }
-.runnig-extra-part{
+.running-extra-part{
   margin-top:150px;
   justify-content:space-between;
 }
@@ -223,18 +222,68 @@ align-items:center;
   align-items:flex-start;
   justify-content: flex-start;
 }
+/* bmi part */
+.bmi-main-div{
+  justify-content:space-between;
+  align-items: center;
+}
 .bmi-calculator{
   color:white;
   margin-left:50px;
 }
 .bmi-para{
-  color:rgb(0, 0, 0);
+  color:grey;
 }
 .bmi-main-div{
   margin-top:200px;
   background:rgb(36, 35, 35);
 }
+.calculate-bmi-container{
+  justify-content:flex-start;
+  align-items:flex-start;
+}
+.calculate-header{
+  font-size:2rem;
+  color:white;
+  font-weight: 900px;
+}
+.calculate-para{
+  color:gray;
+  font-size:1rem;
+  font-weight: 400px;
+}
+input,select{
+  padding:12px 40px;
+  margin-bottom:10px;
+  border-radius:7px;
+  background-color:rgba(255,255,255,0.1);
+  color:white;
+  font-size:1rem;
+}
+input::placeholder{
+  color:#aaa;
+}
+.calculate-btn{
+  background-color:rgb(230,83,60);
+  color:white;
+  font-size:1.3rem;
+  padding:15px 35px;
+  border-radius:29px;
+  margin-top: 40px;
+  border-color:rgb(230,83,60);
+  margin-left:25px;
+  cursor:pointer;
+  margin-bottom:60px;
+  flex-direction: row;
+}
 /* team and trainer part */
+.team-main-div{
+  border-radius:30px;
+  margin-top:100px;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+}
 .team-header{
   color:white;
   margin-top:50px;
@@ -277,13 +326,10 @@ align-items:center;
 .trainer-names,.trainer-roles{
   margin-left:20px;
 }
-.team-main-div{
-  border-radius:30px;
-  margin-top:100px;
-}
+
 /* responsive layout create section */
 /* header section responsive */
- @media screen and (max-width:576px){
+ @media screen and (max-width:575px){
   .navigation,.nav-link,.health-tip-body-shape,.health-tip-para,.first-header-div,.fitness-tag{
     flex-direction:column;
     justify-content:left;
@@ -322,7 +368,12 @@ align-items:center;
     flex-direction: column;
   }
   /* running extra section */
-   .extra-mile-container,.running-athlete-div{
+   .extra-mile-container,.running-athlete-div,.running-extra-part{
     flex-direction: column;
+   }
+   .running-athlete{
+    overflow:hidden;
+    height:50%;
+    width:100%;
    }
    }

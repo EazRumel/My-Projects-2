@@ -7,12 +7,12 @@
     <style>
       td,
       th {
-        border: 3px solid rgb(0, 0, 0);
+        border: 3px solid grey;
         padding: 20px 40px;
       }
       table {
         border-collapse: collapse;
-        color: white;
+        color: grey;
       }
     </style>
     <link rel="stylesheet" href="styles/styles.css" />
@@ -46,7 +46,7 @@
           </h1>
           <p class="health-tip-para">
             Get a perfect body shape with our best guideline for you We will
-            help <br />you always by incouraging and the physical support you
+            help <br />you always by encouraging and the physical support you
             need. So,let's begin!
           </p>
           <button id="join-club-btn">Join Club Now!</button>
@@ -120,7 +120,7 @@
             </p>
             <button class="join-btn">Join Now</button>
           </div>
-          <div class="running-athlete-div display-flex">
+          <div class="running-athlete-div">
             <img class="running-athlete" src="images/run.jpg" />
           </div>
         </div>
@@ -143,7 +143,7 @@
               <tbody>
                 <tr>
                   <td>Below 18.5</td>
-                  <td>Underwight</td>
+                  <td>Underweight</td>
                 </tr>
                 <tr>
                   <td>18.5-24.9</td>
@@ -162,12 +162,37 @@
               </tfoot>
             </table>
           </div>
-          <div class="calculate-bmi-div">
-            <h1>Calculate your BMI</h1>
-            <p>
+          <div class="calculate-bmi-container">
+            <h1 class="calculate-header">Calculate your BMI</h1>
+            <p class="calculate-para">
               We believe fitness should be accessible to everyone, everywhere,
               regardless of income or access to a gym
             </p>
+            <form>
+              <div class="form-group">
+                <input type="text" placeholder="Height/cm" class="placeholder" required>
+                <input type="text" placeholder="Weight/cm"  class="placeholder"class="placeholder" required>
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Age" class="placeholder" required>
+                <select class="select" required>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="others">Others</option>
+                </select>
+                <div class="form-group">
+                  <select required>
+                    <option value="">Select an activity factor</option>
+                    <option value="sedentary">Sedentary</option>
+                    <option value="light">Light</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="active">Active</option>
+                    <option value="super-active">Super-Active</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+            <button type="submit" class="calculate-btn">Calculate</button>
           </div>
         </div>
       </section>
