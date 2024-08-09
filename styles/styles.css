@@ -170,7 +170,54 @@ align-items:center;
   color:white;
 }
 /* run extra section */
-
+.run-extra{
+  margin-top:100px;
+}
+.run-extra-container{
+  align-items:center;
+  justify-content:space-between;
+  margin:0 auto;
+  padding:20px;
+  background-color:rgb(34,34,34);
+  border-radius:10px;
+}
+.run-extra-content{
+  max-width: 50%;
+  justify-content: flex-start;
+  align-items:flex-start;
+  margin-left:30px;
+}
+.run-extra-heading{
+  font-size:2.5rem;
+  margin-bottom: 20px;
+  color:#fff;
+}
+.run-extra-para{
+  font-size:1rem;
+  margin-bottom:20px;
+  color:#aaa;
+}
+.run-ex-btn{
+  background-color:rgb(230,83,60);
+  color:#fff;
+  font-size:1.3rem;
+  border:none;
+  border-radius: 5px;
+  cursor:pointer;
+  border-radius:29px;
+  padding:15px 35px;
+}
+.image-container{
+  max-width: 50%;
+  overflow: hidden;
+  border-radius:30px;
+  margin-left:30px
+}
+.run-ex-image{
+  width:100%;
+  transform-origin:center;
+  transform:scale(1.2);
+}
 /* bmi part */
 .bmi-main-div{
   justify-content:space-between;
@@ -185,7 +232,7 @@ align-items:center;
 }
 .bmi-main-div{
   margin-top:200px;
-  background:rgb(36, 35, 35);
+  background-color:rgb(34,34,34);
 }
 .calculate-bmi-container{
   justify-content:flex-start;
@@ -277,7 +324,7 @@ input::placeholder{
 }
 /* footer section */
 .footer-section{
-  background-color:#333;
+  background-color:rgb(34,34,34);
   padding:40px 20px;
   color:white;
   margin-top:100px;
@@ -352,14 +399,22 @@ margin-top:0;
     flex-direction: column;
   }
   /* running extra section */
-   .extra-mile-container,.running-athlete-div,.running-extra-part{
-    flex-direction: column;
-   }
-   .running-athlete{
-    overflow:hidden;
-    height:50%;
-    width:100%;
-   }
+  .run-extra-container{
+    flex-direction:column;
+  }
+  .run-extra-heading{
+    font-size:2rem;
+  }
+  .run-ex-image{
+    transform:scale(1.49);
+    margin-top:40px;
+    border-radius: 19px;
+  }
+  .run-ex-btn{
+    width:240px;
+    height:50px;
+    align-items:flex-start;
+  }
    /* bmi part to make responsive */
    .bmi-main-div{
     flex-direction: column;
