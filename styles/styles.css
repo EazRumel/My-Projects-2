@@ -273,54 +273,59 @@ input::placeholder{
   flex-direction: row;
 }
 /* team and trainer part */
-.team-main-div{
-  border-radius:30px;
-  margin-top:100px;
-  justify-content: center;
-  align-items:center;
+.team-section{
   text-align:center;
+  padding:50px 20px;
 }
-.team-header{
+.team-section h2{
+  font-size:2.2rem;
+  margin-bottom:10px;
+  font-weight: 900px;
   color:white;
-  margin-top:50px;
-  font-size:2rem;
-  font-weight:700px;
 }
-.team-para{
-  color:gray;
+.team-section p{
+  font-size:1.2rem;
+  margin-bottom: 40px;
+  color:#aaa;
+  font-weight: 400px;
 }
-.text-part-div{
-  text-align: center;
-  justify-content:center;
+.team-main-div{
+  display:grid;
+  grid-template-columns:repeat(3,2fr);
+  gap:20px;
+  align-items:center;
+  padding:20px;
+}
+.team-member{
+  background-color:#1a1a1a;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  justify-content: center;
   align-items: center;
-  margin-top:70px;
+}
+.team-img{
+  width:250px;
+  height:250px;
+  display:block;
+  border-radius: 30px;
+  justify-content:center;
+  align-items:center;
+}
+.member-info{
+  padding:20px;
 }
 .trainer-names{
+  font-size:1.5rem;
+  margin:0 0 10px;
+  justify-content: center;
   color:white;
+  font-weight: 900px;
 }
-.trainer-roles{
-  color:gray;
-}
-.team-container-two{
-  display:grid;
-  grid-template-columns: repeat(3,2fr);
-  align-items:center;
-  justify-content:center;
-  margin-left:150px;
-  margin-right:370px;
-  border-radius: 20px;
-  background:rgb(36, 35, 35);
-}
-.trainer-img{
-  height:250px;
-  width:100%;
-  border-radius:30px;
-  align-items:center;
-  margin-top:20px;
-  margin-left:20px;
-}
-.trainer-names,.trainer-roles{
-  margin-left:20px;
+.trainer-tag{
+  font-size:1rem;
+  color:#999;
+  margin:0;
 }
 /* footer section */
 .footer-section{
@@ -334,13 +339,16 @@ input::placeholder{
   justify-content:space-between;
   align-items:flex-start;
   margin:0 auto;
+  margin-left:0px;
 }
-.footer-column h2,.footer-column h3{
+
+.footer-column h2{
 color:rgb(230,83,60);
 margin-top:0;
+font-size:5rem;
+margin-top:20px;
 }
 .footer-column p{
-  margin:10px 0;
   color:#aaa;
 }
 .footer-ul{
@@ -358,6 +366,12 @@ margin-top:0;
   border-top:10px;
   color:#aaa;
 }
+.footer-column h3{
+  font-weight: 700px;
+  font-size:2rem;
+  color:white;
+  margin-right:100px;
+}
 /* responsive layout create section */
 /* header section responsive */
  @media screen and (max-width:575px){
@@ -373,13 +387,13 @@ margin-top:0;
   }
   #video-tutorial-btn{
     left:30px;
-    top:1050px;
+    top:1250px;
     background:rgba(48,48,48,0.54);
     border-radius: 5px;
   }
   #workout-video-btn{
-    left:230px;
-    top:790px;
+    left:220px;
+    top:1010px;
     background:rgba(48,48,48,0.54);
     border-radius:5px;
   }
@@ -422,10 +436,9 @@ margin-top:0;
    /* team section to make responsive */
    .team-main-div{
     flex-direction: column;
-   }
-   .team-container-two{
     grid-template-columns:repeat(1,1fr);
    }
+   /*footer section to make responsive */
    .footer-section{
     padding:20px 10px;
    }
