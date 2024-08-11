@@ -295,6 +295,7 @@ input::placeholder{
   background:#2b2b2b;
   gap:20px;
   border-radius: 20px;
+  margin-right: 30px;
   justify-content: center;
 }
 .team-container{
