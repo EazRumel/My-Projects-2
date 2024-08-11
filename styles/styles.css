@@ -116,6 +116,9 @@
 justify-content:space-between;
 align-items:center;
 }
+#i{
+  visibility:hidden;
+}
 .fitness-tag{
   color:rgb(230,83,60);
   font-size:2.5rem;
@@ -275,58 +278,40 @@ input::placeholder{
 }
 /* team and trainer part */
 .team-section{
-  text-align:center;
-  padding:50px 20px;
+  margin-top:150px;
+  justify-content: center;
+  
 }
 .team-section h2{
-  font-size:2.2rem;
-  margin-bottom:10px;
-  font-weight: 900px;
   color:white;
+  text-align: center;
+  font-size:3rem;
 }
-.team-section p{
-  font-size:1.2rem;
-  margin-bottom: 40px;
+.team-moto{
   color:#aaa;
-  font-weight: 400px;
+  text-align: center;
 }
 .team-main-div{
   display:grid;
-  grid-template-columns:repeat(3,2fr);
+  grid-template-columns: repeat(3,2fr);
+  background:#2b2b2b;
   gap:20px;
-  align-items:center;
-  padding:20px;
-}
-.team-member{
-  background-color:#1a1a1a;
-  border-radius:15px;
-  overflow:hidden;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  border-radius: 20px;
+  margin-right:20px;
+  margin-left:px;
   justify-content: center;
-  align-items: center;
 }
-.team-img{
-  width:250px;
-  height:250px;
-  display:block;
-  border-radius: 30px;
-  justify-content:center;
-  align-items:center;
+.team-container{
+  margin-left:20px;
+  margin-top: 20px;
 }
-.member-info{
-  padding:20px;
+.team-container img{
+   height:290px;
+   width:350px;
+   border-radius:20px;
 }
-.trainer-names{
-  font-size:1.5rem;
-  margin:0 0 10px;
-  justify-content: center;
+.team-container h3{
   color:white;
-  font-weight: 900px;
-}
-.trainer-tag{
-  font-size:1rem;
-  color:#999;
-  margin:0;
 }
 /* Pricing Plan Section */
 .pricing-section{
@@ -448,15 +433,22 @@ margin-top:20px;
 /* responsive layout create section */
 /* header section responsive */
  @media screen and (max-width:575px){
-  .navigation,.nav-link,.health-tip-body-shape,.health-tip-para,.first-header-div,.fitness-tag{
+  .health-tip-body-shape,.health-tip-para,.first-header-div,.fitness-tag{
     flex-direction:column;
     justify-content:left;
     align-items: left;
     text-align: left;
   }
-  .nav-link{
+  .navigation{
+    margin-right:50px;
+  }
+  #i{
+    visibility:visible;
+    margin-bottom:50px;
+    margin-left:200px;
+  }
+  .nav-link,.nav-item{
     display:none;
-    border-radius: 10px;
   }
   .header-section{
     width:100%;
@@ -510,6 +502,9 @@ margin-top:20px;
    .bmi-main-div{
     flex-direction: column;
    }
+   .calculate-bmi-container{
+    margin-left: 70px;
+   }
    /* team section to make responsive */
    .team-main-div{
     flex-direction: column;
@@ -519,15 +514,22 @@ margin-top:20px;
    .pricing-container{
     flex-direction: column
    }
+   .pricing-container{
+    justify-content:center;
+    align-items:center;
+   }
    /*footer section to make responsive */
+   .footer-column h2{
+    font-size:3rem;
+   }
    .footer-section{
     padding:20px 10px;
    }
    .footer-container{
     flex-direction: column;
    }
-   .footer-column h2,.footer-column{
-     font-size:1.2rem;
+   .footer-column{
+     font-size:1.9rem;
    }
    .footer-btm-para{
     font-size:0.9rem;
